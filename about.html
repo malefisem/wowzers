@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>About Us</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Beth Ellen">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="navbar" id="myNavbar">
+  		<a href="intro.html">Wowzers Co.</a>
+		<a href="register.html">Register</a>
+		<a href="contact.html">Contact</a>
+ 	 	<a class="active" href="about.html">About</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarFunction()">&#9776;</a>
+	</div>
+	<article>
+    	<center><h2 style="font-size: 30px; font-family: Beth Ellen">About Us</h2></center>
+		<div class="tab" align="center">
+			<button class="tablinks" onclick="openTab(event,'section1')" id="defaultOpen">Introduction</button>
+			<button class="tablinks" onclick="openTab(event,'section2')">The Owner</button>
+		</div>
+		
+		<div id="section1" class="tabcontent">
+		<h2>Introduction<hr></h2>
+			<div class="row">
+					<div class="column25" align="center">
+						<img src="logoWowzers.png" alt="logo">
+					</div>
+					<div class="column75">
+						<p style="text-align: justify">Wowzers CO. is an Audio Visual company providing services to the events and marketing industry. The company was established in 2015 and has proven itself as a trusted service provider.<br><br>We are a dedicated team of event managers, photographers, videographers, visual technicians and graphic designers led by the Director, Owner and Founder, Nur Hasyim Muhammad.<br><br>We have strong, healthy relationships with marketing companies, event planners, hotels and conference centers which serve both the private and public sectors. We pride ourselves in having a fresh, innovative approach, resulting in delivering a world class experience with every project we execute.<br><br>Our team guarantees  an exclusive and individual service. We  offer personal consultations with  highly qualified creative directors, photo-editors, image and video producers, story-boarders,  graphic Illustrators,  stylists, make-up artists, hair stylists and photographers. <br><br>Wowzers works independently or synergistically, depending on the clients requirements. We use our experience  and our  know-how in a  efficient way  for  the production   of visual media and in the Brand management.</p>
+					</div>
+			</div>
+			<table width="60%" align="center" style="border-top:solid; border-collapse: collapse;">
+				<tr style="border-bottom: 2px solid #ddd;">
+					<td width="30%" bgcolor="#F0F0F0">Company Name</td><td width="70%">Wowzers Co.</td>
+				</tr>
+				<tr style="border-bottom: 2px solid #ddd;">
+					<td width="30%" bgcolor="#F0F0F0">Director</td><td width="70%">Nur Hasyim Muhammad</td>
+				</tr>
+				<tr style="border-bottom: 2px solid #ddd;">
+					<td width="30%" bgcolor="#F0F0F0">Business Field</td><td width="70%">Multimedia, Art, Content Maker</td>
+				</tr>
+				<tr style="border-bottom: 2px solid #ddd;">
+					<td width="30%" bgcolor="#F0F0F0">Address</td><td width="70%">Level 24, Eco Office Suites, 40150, Petaling Jaya, Selangor, Malaysia</td>
+				</tr>
+				<tr style="border-bottom: 2px solid #ddd;">
+					<td width="30%" bgcolor="#F0F0F0">Date of Establishment</td><td width="70%">June 2015</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="section2" class="tabcontent" style="display:none">
+		<h2>The Owner<hr></h2>
+			<div class="row">
+				<div class="column25" align="center">
+					<img class="owner" width="auto" height="80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Park_Seo-joon_in_June_2019.png/330px-Park_Seo-joon_in_June_2019.png" alt="Owner" style="padding-top: 10%;">
+				</div>
+				<div class="column75">
+					<center><h2 style="color: black; font-family: Beth Ellen, 'serif';">Nur Hasyim Muhammad</h2></center><p style="text-align: justify">Nur Hasyim Muhammad is the Owner cum Director at Wowzers Co. Prior to Wowzers, Hasyim was an Assistant Director at BigHit Labels Korea after finishing his studies in Seoul. <br><br>He has contributed to a number of different industry publication including Bloomberg and Forbes.<br><br>He has a Bachelor in IT (Multimedia) from University of Malaya and a Master's Degree in Multimedia from Seoul National University.<br><br>In his spare time, he cooks and is a self-proclaimed big-eater.</p>
+					<h4>Awards</h4>
+						<ul>
+						  <li>Best Director, 2019</li>
+						  <li>Best Director, 2018</li>
+						  <li>Best Producer, 2017</li>
+						  <li>Best New Producer, 2016</li>
+						</ul> 
+				</div>
+			</div>
+		</div>
+		
+		
+  	</article>
+	<footer>
+  		<a href="mailto:nurhasyim00@icloud.com"><i class="fa fa-fw fa-envelope"></i></a>
+		<a href="https://wasap.my/601114228098" target="_blank"><i class="fa fa-fw fa-whatsapp"></i></a>
+		<a href="https://instagram.com/syimstagram" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+  		<a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+	</footer>
+<script>
+function openTab(evt, Name) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+<script type="text/javascript" src="res-navbar.js"></script>
+</body>
+</html>

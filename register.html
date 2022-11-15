@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Register</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Beth Ellen">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="navbar" id="myNavbar">
+  		<a href="intro.html">Wowzers Co.</a>
+		<a class="active" href="register.html">Register</a>
+		<a href="contact.html">Contact</a>
+ 	 	<a href="about.html">About</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarFunction()">&#9776;</a>
+	</div>
+	<article>
+    	<center><h2 style="font-size: 30px; font-family: Beth Ellen">Register as a Member</h2></center>
+    	<div class="container">
+		<form name="regForm" onsubmit="return validateForm()" method="post" action="">
+		<div class="row">
+			<div class="columnB">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required></div>
+			<div class="columnB">
+		    	<label for ="ic">IC:</label>
+				<input type="text" id="ic" name="ic" required></div>
+		</div>
+		<div class="row">	
+			<div class="columnB">
+				<label for="username">Username:</label>
+  				<input type="text" id="username" name="username" required></div>
+			<div class="columnB">
+  				<label for="password">Password:</label>
+  				<input type="password" id="password" name="password" required></div>
+		</div>
+			<div style="padding-left: 15px; padding-right: 15px">
+				<label for="address">Home Address:</label>
+				<textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+			</div>
+			<div width="100%" style="display: inline-flex; padding-left: 15px; padding-right: 15px">
+					<label>Gender:&nbsp;&nbsp;</label>
+					<input type="radio" id="male" name="gender" value="male" required>
+					<label for="male"> Male&nbsp;&nbsp;</label>
+					<input type="radio" id="female" name="gender" value="female" required>
+					<label for="female"> Female&nbsp;&nbsp;</label>
+			</div>
+		<div class="row">
+			<div class="columnB">
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email"></div>
+			<div class="columnB">
+				<label for="class">Class:</label>
+				<select id="class" name="class">
+					<option value="" selected disabled>Select class</option>
+					<option value="a">A</option>
+					<option value="b">B</option>
+					<option value="c">C</option>
+					<option value="d">D</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columnB">
+				<label for="age">Age:</label>
+				<input type="text" id="age" name="age" required></div>
+			<div class="columnB">
+				<label for="phone">Telephone:</label>
+				<input type="text" id="phone" name="phone" required></div>
+		</div>
+		<div width="100%" style="display: inline-flex; padding-left: 15px; padding-right: 15px">
+			<label>Interest:&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice1" name="choice1" value="Photography">
+			<label for="choice1"> Photography&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice2" name="choice2" value="Videography">
+			<label for="choice2"> Videography&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice3" name="choice3" value="Web">
+			<label for="choice3"> Website&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice4" name="choice3" value="Audio">
+			<label for="choice4"> Audio & Music&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice5" name="choice3" value="Content">
+			<label for="choice5"> Content Dev&nbsp;&nbsp;</label>
+			<input type="checkbox" id="choice6" name="choice3" value="Talent">
+			<label for="choice6"> Talent&nbsp;&nbsp;</label></div>
+		<center><input type="submit" name="Register" value="Register"> <input type="reset" name="Reset" value="Reset"></center>
+		</form></div>
+	</article>
+	<footer>
+  		<a href="mailto:nurhasyim00@icloud.com"><i class="fa fa-fw fa-envelope"></i></a>
+		<a href="https://wasap.my/601114228098" target="_blank"><i class="fa fa-fw fa-whatsapp"></i></a>
+		<a href="https://instagram.com/syimstagram" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+  		<a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+	</footer>
+<script type="text/javascript" src="validateForm.js"></script>
+<script type="text/javascript" src="res-navbar.js"></script>
+</body>
+</html>
